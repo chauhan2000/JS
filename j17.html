@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+var arr = [10,20,30,40];
+var arr1 = [12,13];
+
+var a = arr.filter(checkAdult);
+var b = arr.unshift(11);
+var c= arr.indexOf(20);
+var d = arr.some(checkAdult);
+var e = arr.every(checkAdult);
+var e = arr.slice(1,2);
+var f = arr.slice(21,2);
+var g = arr.concat(arr1);
+var h = arr1.shift();
+arr1.splice(1,0,14,15);
+document.write("<br><br>")
+
+function result()
+{
+alert("hello");
+document.write(a);
+document.write("<br><br>");
+document.write(b);
+document.write(c);
+document.write("<br><br>");
+document.write(d);
+document.write("<br><br>");
+document.write(e);
+document.write("<br><br>");
+document.write(f);
+document.write("<br><br>");
+document.write(g);
+document.write("<br><br>");
+document.write(h);
+document.write("<br><br>");
+document.write(arr1);
+document.write("<br><br>");
+}
+
+function checkAdult(age)
+{
+return age >= 18;
+}
+</script>
+</head>
+<body>
+<button onclick = "result()">Onclick</button>
+</body>
+</html>
